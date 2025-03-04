@@ -1,0 +1,55 @@
+JAVASCRIPT:
+programming / scripting language
+JAVASCRIPT scripting language
+
+differance bw prog and scripting:
+prog: compiled
+scripting: interpreted
+
+
+statically typed language  : when we declare a variable, we have to specify the type of the variable.
+dynamically typed language : when we declare a variable, we don't have to specify the type of the variable.
+
+
+server side language : php, asp.net, jsp....
+client side language : html, css, js
+
+
+client only understand : html:
+
+
+use of JAVASCRIPT:
+to manupulate the html elements | DOM manipulation
+
+DOM:document object model
+
+
+var declare:
+3 keywords
+var,let and const
+
+number
+string
+boolean
+object
+undefined
+
+
+
+differance bw var let const..
+
+var scope: global scope:
+let scope : block scope : {}
+const scope : block scope
+
+
+
+
+
+//internal
+//external js
+//inline js
+
+
+
+
