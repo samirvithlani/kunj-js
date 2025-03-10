@@ -43,12 +43,55 @@ let scope : block scope : {}
 const scope : block scope
 
 
-
-
-
 //internal
 //external js
 //inline js
+
+compiler: 
+name of JAVASCRIPT compiler = 
+
+browser JAVASCRIPT engines:
+1st engine: 
+spider monkey: firefox
+v8: google chrome
+chakra: microsoft edge
+
+operators:
+operators are used to perform operations on variables and values.
+type of operators:
+1)unary operators : it requires only one operand.
+2)binary operators : it requires two operands.
+3)ternary operators : it requires three operands.
+
+unary operators:
+1)increment operator: ++a, a++
+2)decrement operator: --a, a--
+
+2)binary operators:
+1)arithmetic operators: +,-,*,/,%,++,--,**
+2)assignment operators: =,+=,-=,*=,/=,%=,<<=,>>=,>>>=,&=,^=,|=
+3)comparison operators: ==,===,!=,!==,>,<,>=,<=
+4)logical operators: &&,||,!
+5)bitwise operators: &,|,^,~,<<,>>,>>>
+6)string operators: +
+7)conditional operators: ?: 
+8)comma operators: ,
+9)typeof operators: typeof
+10)instanceof operators: instanceof
+11)void operators: void
+12)delete operators: delete
+
+
+
+//assignment operators : = 
+right to left
+
+no1 = 100
+no2 = 200
+
+console.log(no1 = 200)
+console.log(no2 = 100)
+
 
 
 
