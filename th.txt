@@ -94,5 +94,16 @@ console.log(no2 = 100)
 
 
 
+decision making statements:
+if else
+switch case
+loops
+
+if(condition){
+    //if block
+}
+else{
+    //else block
+}
 
 
