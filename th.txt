@@ -107,3 +107,14 @@ else{
 }
 
 
+
+declare users's monthly salary:
+find user is eligible for tax or not:
+if yes how much?
+then display total income and net income after tax deduction.
+
+pa salary >20 lacks --> 30%
+pa salary > 10,00,000 - less than 20,00,000 --> 20%
+pa salary > 5,00,000 - less than 10,00,000 --> 5%
+pa salary > 2,50,000 - less than 5,00,000 --> 1%
+pa salary < 2,50,000 --> 0%
