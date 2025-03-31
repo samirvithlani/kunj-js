@@ -118,3 +118,9 @@ pa salary > 10,00,000 - less than 20,00,000 --> 20%
 pa salary > 5,00,000 - less than 10,00,000 --> 5%
 pa salary > 2,50,000 - less than 5,00,000 --> 1%
 pa salary < 2,50,000 --> 0%
+
+
+type of lopps
+
+entty control : for while
+exit control : do while
