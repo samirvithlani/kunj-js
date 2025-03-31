@@ -12,10 +12,11 @@ var oddSum = 0;
 for(let i=sp;i<=ep;i++){
 
     if(i%2==0){
-        console.log(i);
+        console.log("even",i);
         evenSum = evenSum + i;
     }
     else{
+        console.log("odd",i);
         oddSum = oddSum + i;
     }
 
