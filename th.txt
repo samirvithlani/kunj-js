@@ -124,3 +124,7 @@ type of lopps
 
 entty control : for while
 exit control : do while
+
+
+get 2 numbers from user find all prime numbers between thoese 2 numbers
+
