@@ -128,3 +128,21 @@ exit control : do while
 
 get 2 numbers from user find all prime numbers between thoese 2 numbers
 
+
+
+functions:
+UDF builtin
+
+4 type 
+
+with return type with argument
+with return type without argument
+without return type with argument
+without return type without argument
+
+
+void demo()
+int sum()
+float pers()
+
+//JS --> function keyword --> arrow functions
