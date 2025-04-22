@@ -26,7 +26,7 @@ console.log(flag)
 
 
 var flag = marks.some((m)=>{
-    return m>=24
+    return m>=2
 })
 console.log("flag",flag)
 var flag = marks.every((m)=>{
