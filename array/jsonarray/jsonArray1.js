@@ -38,3 +38,10 @@ var filtStu = students.filter((stu)=>{
     return stu.age>=24
 })
 console.log(filtStu)
+
+
+//create mobile unit seller data of 1 days, phone name, price quantity, discount, color
+//1)find total sales of day after discount
+//2)find total given discount
+//3)find red color unit sold
+//4)find all phoes greterthen >50000
