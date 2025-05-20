@@ -146,3 +146,10 @@ int sum()
 float pers()
 
 //JS --> function keyword --> arrow functions
+
+event: somthing happen
+
+DOM: document object model:
+document --> window object explore
+
+tag: 4 identifiers:id name class tag :- backend
