@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./formDemo1.js"></script>
+</head>
+<body>
+    <!-- action -->
+     <!-- action must stop  function must call.....-->
+      <!-- html page function(event) -->
+
+    <form onsubmit="submitHandler(event)">
+        <div>
+            <label>NAME</label>
+            <input type="text" id="name">
+        </div>
+        <div>
+            <label>AGE</label>
+            <input type="text" id="age">
+        </div>
+        <div>
+            <label>COLOR</label>
+            <input type="color" id="color">
+        </div>
+        <div>
+            <input type="submit" value="submit">
+        </div>
+    </form>
+    <div id="output">
+        <h1>OUTPUT</h1>
+        <h1 id="nameOutput"></h1>
+        <h3 id="ageOutput"></h3>
+    </div>
+</body>
+</html>
