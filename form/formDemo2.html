@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./formDemo2.js"></script>
+</head>
+<body>
+    <form onsubmit="submitHandler(event)">
+            <div>
+                <label>NAME</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label>GENDER</label><br>
+                MALE: <input type="radio" name="gender" value="male" >
+                FEMALE: <input type="radio" name="gender" value="female">
+            </div>
+            <div>
+                <label>HOBBIES</label><br>
+                CRICKET:<input type="checkbox" name="hobbies" value="cricket">
+                CHESS:<input type="checkbox" name="hobbies" value="chess">
+                FOOTBALL:<input type="checkbox" name="hobbies" value="football">
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+    </form>
+</body>
+</html>
