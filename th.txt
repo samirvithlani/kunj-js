@@ -162,6 +162,14 @@ please guess number
 20 --> guessed number is lowwe then gen
 30 --> guessed number is high then gen
 55 -> guessed number higher then gen
-
 50 guess --> you have guessed number correctly in 5 attempts
+
+sync programming
+non sync programming
+
+------------------------------------------ 10 min
+******************************************
+==========================================
+
+
 

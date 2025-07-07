@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Emoji Drawing Board</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        #board {
+            display: grid;
+            grid-template-columns: repeat(10, 40px);
+            grid-gap: 5px;
+        }
+
+        .cell {
+            width: 40px;
+            height: 40px;
+            background: white;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            cursor: pointer;
+            transition: all 0.2s;
+            user-select: none;
+        }
+
+        .cell:hover {
+            transform: scale(1.1);
+        }
+
+        #clearButton {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #ff6347;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #clearButton:hover {
+            background: #ff4020;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎨 Emoji Drawing Board</h1>
+    <div id="board"></div>
+    <button id="clearButton">Clear Board</button>
+
+    <script>
+        const board = document.getElementById('board');
+        const clearButton = document.getElementById('clearButton');
+        const emojis = ['😀','🎉','🚀','🌟','🔥','🍕','🐱','🎮','🏀','🎵','🍔','🥳','😻'];
+
+        // Create 100 cells
+        for (let i = 0; i < 100; i++) {
+            const cell = document.createElement('div');
+            cell.classList.add('cell');
+
+            // Click to set random emoji
+            cell.addEventListener('click', () => {
+                cell.textContent = randomEmoji();
+            });
+
+            // Hover to change background color
+            cell.addEventListener('mouseover', () => {
+                cell.style.background = randomColor();
+            });
+
+            // Double click to clear
+            cell.addEventListener('dblclick', () => {
+                cell.textContent = '';
+                cell.style.background = 'white';
+            });
+
+            board.appendChild(cell);
+        }
+
+        // Clear board
+        clearButton.addEventListener('click', () => {
+            const cells = document.querySelectorAll('.cell');
+            cells.forEach(cell => {
+                cell.textContent = '';
+                cell.style.background = 'white';
+            });
+        });
+
+        function randomEmoji() {
+            return emojis[Math.floor(Math.random() * emojis.length)];
+        }
+
+        function randomColor() {
+            return `hsl(${Math.random() * 360}, 70%, 80%)`;
+        }
+    </script>
+</body>
+</html>
