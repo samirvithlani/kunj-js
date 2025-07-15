@@ -7,7 +7,7 @@ const generateExam  = ()=>{
         setTimeout(() => {
             resolve({
                 name:"Maths",
-                questions:10,
+                questions:9,
                 marks:100
             })
         }, 300);
@@ -24,8 +24,14 @@ const generateQuestion = (exam)=>{
         const questionData ={
             "q1":"q1","q2":"q2","q3":"q3","q4":"q4","q5":"q5","q6":"q6","q7":"q7","q8":"q8","q9":"q9","q10":"q10"
         }
+        console.log("///",exam)
         setTimeout(()=>{
-            resolve({exam,questionData})
+            if(exam.questions<10){
+                reject("not enough questions..")
+            }
+            else{
+                resolve({exam,questionData})
+            }
         },300)
     })
 
@@ -39,6 +45,8 @@ const startExam = ()=>{
         //console.log(exam)
         generateQuestion(exam).then((question)=>{
             console.log("exam...question",question)
+        }).catch((err)=>{
+            console.log(err)
         })
     })
 
