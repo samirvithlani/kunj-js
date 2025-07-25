@@ -26,3 +26,16 @@ const getData = ()=>{
 
 }
 
+const sessionCookie = ()=>{
+    var sessionEmail = "session@gmail.com"
+    document.cookie = `sessionEmail=${sessionEmail}; path=/; expires=0`
+    console.log("Session cookie set for email: ", sessionEmail);
+}
+
+const thirdParyCookie = ()=>{
+    var thirdPartyEmail = "thirdparty@gmail.com",
+        thirdPartyId = 2,
+        thirdPartyAge = 30;
+    document.cookie = `thirdPartyEmail=${thirdPartyEmail}; expires=Fri, 25 July 2025 12:20:00 GMT+0530; path=/; domain=https://www.google.com/`
+
+}
