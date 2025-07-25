@@ -173,4 +173,13 @@ non sync programming
 
 
 
+product.html: pname price
+
+subbmit --> [{name:"iphone",price:1000},{},{},{}]
+localstorage...
+
+
+product list.html:
+product display : local stoage  parse loop dom element
+
 
